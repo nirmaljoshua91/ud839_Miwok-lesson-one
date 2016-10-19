@@ -17,6 +17,8 @@ package com.example.android.miwok;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
 
 public class NumbersActivity extends AppCompatActivity {
 
@@ -24,5 +26,27 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
+
+        String[] words=new String[10];
+        words[0]="One";
+        words[1]="Two";
+        words[2]="Three";
+        words[3]="Four";
+        words[4]="Five";
+        words[5]="Six";
+        words[6]="Seven";
+        words[7]="Eight";
+        words[8]="Nine";
+        words[9]="Ten";
+        String temp="Firstinit";
+        for (int i=0;words.length<=0;i++){
+            temp=temp + "\n" +words[i];
+            Log.d("MyTag","Inside For");
+        }
+
+        //Log.d("MyTag","value is"+temp);
+
+        //TextView numbers= (TextView)findViewById(R.id.NumbersWorsListView);
+       // numbers.setText(temp);
     }
 }
