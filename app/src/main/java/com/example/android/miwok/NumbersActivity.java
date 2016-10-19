@@ -38,15 +38,12 @@ public class NumbersActivity extends AppCompatActivity {
         words[7]="Eight";
         words[8]="Nine";
         words[9]="Ten";
-        String temp="Firstinit";
-        for (int i=0;words.length<=0;i++){
+        String temp="";
+        for (int i=0;i<=words.length-1;i++){
             temp=temp + "\n" +words[i];
-            Log.d("MyTag","Inside For");
         }
+        TextView numbers= (TextView)findViewById(R.id.NumbersWorsListView);
+       numbers.setText(temp);
 
-        //Log.d("MyTag","value is"+temp);
-
-        //TextView numbers= (TextView)findViewById(R.id.NumbersWorsListView);
-       // numbers.setText(temp);
     }
 }
