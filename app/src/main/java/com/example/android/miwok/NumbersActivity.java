@@ -32,31 +32,20 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        ArrayList<String> words=new ArrayList<String>();
-        words.add("One");
-        words.add("Two");
-        words.add("Three");
-        words.add("Four");
-        words.add("Five");
-        words.add("Six");
-        words.add("Seven");
-        words.add("Eight");
-        words.add("Nine");
-        words.add("Ten");
-       /* String temp="";
-        for (int i=0;i<=words.size()-1;i++){
-            LinearLayout wordsLinear =(LinearLayout) findViewById(R.id.numbersLinearView);
-            TextView wordsTextView=new TextView(this);
-            wordsTextView.setText(words.get(i));
-            wordsTextView.setGravity(1);
-            wordsLinear.addView(wordsTextView);
-           // temp=temp + "\n" +words.get(i);
-            Log.v("wordPositions","The word in the"+i+"th position is"+words.get(i));
-        }
-       // TextView numbers= (TextView)findViewById(R.id.NumbersWorsListView);
-       //numbers.setText(temp);
-       */
-        ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,words);
+        ArrayList<Word> words=new ArrayList<Word>();
+        words.add(new Word("one","lutti"));
+        words.add(new Word("Two","ottiko"));
+        words.add(new Word("Three","tolookosu"));
+        words.add(new Word("Four","ooyisa"));
+        words.add(new Word("Five","masokka"));
+        words.add(new Word("Six","temmokka"));
+        words.add(new Word("Seven","kenekako"));
+        words.add(new Word("Eight","kawinta"));
+        words.add(new Word("Nine","Wo'e"));
+        words.add(new Word("Ten","ma'aacha"));
+
+
+        ArrayAdapter<Word> itemAdapter = new ArrayAdapter<Word>(this,R.layout.list_item,words);
         ListView listView =(ListView)findViewById(R.id.list);
         listView.setAdapter(itemAdapter);
 
