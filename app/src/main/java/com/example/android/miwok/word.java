@@ -1,10 +1,11 @@
 package com.example.android.miwok;
 
 /**
- * Created by Nirmal Joshua Laptop on 10/25/2016.
+ * Created by Nirmal on 10/26/2016.
  */
 
 public class Word {
+
     private String mDefaultWord;
     private String mMiwokWord;
 
@@ -13,11 +14,11 @@ public class Word {
         mMiwokWord = miwokWord;
     }
 
-    public String getDefaultWords() {
+    public String getDefaultWord() {
         return mDefaultWord;
     }
 
-    public String getMiwokWord() {
+    public String getmMiwokWord() {
         return mMiwokWord;
     }
 }
