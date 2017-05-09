@@ -8,10 +8,17 @@ public class Word {
 
     private String mDefaultWord;
     private String mMiwokWord;
+    private int mImageResourceID;
 
     public Word(String defaultWord, String miwokWord) {
         mDefaultWord = defaultWord;
         mMiwokWord = miwokWord;
+    }
+
+    public Word(String defaultWord, String miwokWord, int imageResourceID) {
+        mDefaultWord = defaultWord;
+        mMiwokWord = miwokWord;
+        mImageResourceID = imageResourceID;
     }
 
     public String getDefaultWord() {
@@ -20,5 +27,9 @@ public class Word {
 
     public String getmMiwokWord() {
         return mMiwokWord;
+    }
+
+    public int getResourseID() {
+        return mImageResourceID;
     }
 }
