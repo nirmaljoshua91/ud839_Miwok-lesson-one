@@ -24,20 +24,23 @@
         android:paddingLeft="16dp">
 
         <TextView
-        android:id="@+id/list_item_miwokText"
+            android:id="@+id/list_item_miwokText"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="bottom"
             android:layout_weight="1"
-        android:textStyle="bold"
-        tools:text="xgfhdhhfgerhg"/>
-    <TextView
-        android:id="@+id/list_item_DefaultText"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="top"
-        android:layout_weight="1"
-       tools:text="dasgwsdhsrfh"/>
+
+            android:textStyle="bold"
+            tools:text="xgfhdhhfgerhg" />
+
+        <TextView
+            android:id="@+id/list_item_DefaultText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+
+            tools:text="dasgwsdhsrfh" />
 
     </LinearLayout>
 
